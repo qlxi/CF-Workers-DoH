@@ -953,7 +953,7 @@ function formatTTL(seconds) {
 async function queryIpGeoInfo(ip) {
   try {
     // Использование нашего прокси-интерфейса
-    const response = await fetch(`./ip-info?ip=${ip}`);
+    const response = await fetch(\`./ip-info?ip=\${ip}\`);
     if (!response.ok) {
       throw new Error(`HTTP ошибка: ${response.status}`);
     }
