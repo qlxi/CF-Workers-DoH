@@ -1,28 +1,28 @@
 # CF-Workers-DoH
 ![img](./img.png)
 
-CF-Workers-DoH 是一个基于 Cloudflare Workers 构建的 DNS over HTTPS (DoH) 解析服务。它允许你通过 HTTPS 协议进行 DNS 查询，提高查询的安全性和隐私保护。
+CF-Workers-DoH — это сервис HTTPS (DoH), построенный на основе Cloudflare Workers. Он позволяет выполнять DNS-запросы через протокол HTTPS, повышая безопасность и защиту приватности запросов.
 
-## 🚀 部署方式
+## 🚀 Способы развертывания
 
-- **Workers** 部署：复制 [_worker.js](https://github.com/cmliu/CF-Workers-DoH/blob/main/_worker.js) 代码，`保存并部署`即可
-- **Pages** 部署：`Fork` 后 `连接GitHub` 一键部署即可
+- **Workers** Скопируйте код из файла: [_worker.js](https://github.com/cmliu/CF-Workers-DoH/blob/main/_worker.js), затем нажмите Сохранить и развернуть.
+- **Pages** Сделайте Fork репозитория, затем подключите GitHub и разверните в один клик.
 
-## 📖 使用方法
+## 📖 Инструкция по использованию
 
-例如 **Workers项目域名** 为：`doh.090227.xyz`；
+Например, домен проекта **Workers `doh.090227.xyz`；
 
-在支持 DoH 的客户端或应用中，将 DoH 地址设置为：
+В клиенте или приложении, поддерживающем DoH, установите адрес DoH следующим образом:
 ```url
 https://doh.090227.xyz/dns-query
 ```
 
-## 💡 技术特性
-- 基于 Cloudflare Workers 无服务器架构
-- 使用原生 JavaScript 实现
+## 💡 Технические особенности
+- Основан на бессерверной архитектуре Cloudflare Workers
+- Реализован с использованием нативного JavaScript
 
-## 📝 许可证
-本项目开源使用，欢迎自由部署和修改！
+## 📝 Лицензия
+Проект открыт для использования, вы можете свободно развертывать и изменять его!
 
-## 🙏 鸣谢
+## 🙏 Благодарности
 [tina-hello](https://github.com/tina-hello/doh-cf-workers)、Cloudflare、GPT
